@@ -1,0 +1,96 @@
+/* || Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+
+/* || RESETS */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* COLORS */
+
+  --BOLD-COLOR: rgb(255, 165, 0);
+  --LINK-COLOR: rgb(255, 165, 0);
+
+  /* FONTS */
+
+  --FF-HEADER: "Inter", sans-serif;
+  --FF-REGULAR: "Open Sans", sans-serif;
+}
+
+/* || UTILITY CLASSES */
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+/* || GENERAL */
+
+body {
+  font-family: var(--FF-REGULAR);
+  text-align: center;
+}
+
+span {
+  color: var(--BOLD-COLOR);
+}
+
+hr {
+    width: 35.5rem;
+    height: 0;
+    border: 1px orange solid;
+    margin: 0 auto 8px;
+}
+
+/* ||CONTAINER */
+
+.container {
+  width: 592px;
+  margin: 0 auto 4.5rem;
+}
+
+/* || HEADER */
+
+.hero__img{
+    margin-bottom: 4.5rem;
+}
+
+/* || MAIN */
+
+.main__h1 {
+  font-family: var(--FF-HEADER);
+  font-size: 3rem;
+  font-weight: normal;
+  line-height: 3.5rem;
+  margin-bottom: 32px;
+}
+
+.main__p {
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+}
+
+/* ||FOOTER */
+
+.footer a:any-link {
+  color: var(--LINK-COLOR);
+}
+
+.footer a:first-of-type {
+    margin-right: 28px;
+}
+
+.balls {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
