@@ -1,0 +1,112 @@
+/* || Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Open+Sans:wght@500;700&display=swap");
+
+/* || RESETS */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* COLORS */
+
+  --BOLD-TITLE: rgb(238, 36, 255);
+  --BOLD-COLOR: rgb(63, 61, 86);
+  --LINK-COLOR: rgb(63, 61, 86);
+
+  /* FONTS */
+
+  --FF-HEADER: "Dosis", sans-serif;
+  --FF-REGULAR: "Open Sans", sans-serif;
+}
+
+/* || UTILITY CLASSES */
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+/* || GENERAL */
+
+body {
+  font-family: var(--FF-REGULAR);
+  text-align: center;
+  min-height: 100vh;
+}
+
+span {
+  color: var(--BOLD-COLOR);
+  font-weight: bold;
+}
+
+hr {
+  width: 35.5rem;
+  height: 0;
+  border: 1px rgb(63, 61, 86) solid;
+  margin: 0 auto 8px;
+}
+
+/* ||CONTAINER */
+
+.container {
+  width: 39.125rem;
+  margin: 4rem auto 4rem;
+}
+
+/* || HEADER */
+
+.hero__img {
+  margin-bottom: 2rem;
+}
+
+/* || MAIN */
+
+.main__h1 {
+  font-family: var(--FF-HEADER);
+  font-size: 3rem;
+  font-weight: normal;
+  color: var(--BOLD-COLOR);
+  margin-bottom: 1rem;
+}
+
+.main__h1 span {
+  color: var(--BOLD-TITLE);
+}
+
+.main__p {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+
+/* ||FOOTER */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a:any-link {
+  color: var(--LINK-COLOR);
+  font-weight: bold;
+}
+
+.footer a + a {
+  margin-left: 28px;
+}
+
+.footer figure {
+  width: 100%;
+}
+
+.footer__img {
+  width: 100%;
+}
