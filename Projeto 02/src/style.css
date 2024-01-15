@@ -1,0 +1,157 @@
+/* || Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Mulish:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+
+/* || RESETS */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || UTILITY CLASSES */
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* FONTS */
+
+  --FF-MENUH1: "Mulish", sans-serif;
+  --FF-REGULAR: "Open-sans", sans-serif;
+  --FF-BUTTON: "DM-Sans", sans-serif;
+
+  /* COLORS */
+
+  --REGULAR-COLOR: rgb(137, 197, 204);
+}
+
+/* || GENERAL */
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ||CONTAINER */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+/* || HEADER */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 20px 50px;
+}
+
+.nav__menu {
+  display: flex;
+  font-family: var(--FF-MENUH1);
+  list-style-type: none;
+  gap: 3rem;
+}
+
+.nav__menu a {
+  color: var(--REGULAR-COLOR);
+}
+
+.nav__menu a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* || MAIN */
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.main__section {
+  display: flex;
+  flex-direction: column;
+  line-height: 4rem;
+}
+
+.hero__img {
+  width: 26rem;
+}
+
+.main__sectionh1 {
+  font-family: var(--FF-MENUH1);
+}
+
+.main__sectionh1 strong {
+  color: var(--REGULAR-COLOR);
+}
+
+.main__sectionp {
+  font-family: var(--FF-REGULAR);
+}
+
+.main__button {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 14px 32px 15px 32px;
+  background-color: #69b99d;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+.main__button:hover {
+  background-color: rgb(30, 204, 143);
+}
+
+.main__button a {
+  font-family: var(--FF-BUTTON);
+}
+
+.main__button img {
+  margin-right: 1.5px;
+}
+
+/* ||FOOTER */
+
+.footer {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.footer__p {
+  font-family: var(--FF-REGULAR);
+}
+
+.footer a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.footer img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
