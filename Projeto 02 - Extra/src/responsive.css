@@ -1,0 +1,41 @@
+@media screen and (max-width: 720px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 20px 0 20px;
+    padding: 0;
+  }
+
+  .main {
+    flex-direction: column;
+    text-align: center;
+    margin: 40px auto;
+  }
+
+  .main__section {
+    margin: 30px 0;
+  }
+
+  .main__section p {
+    margin-top: 30px;
+  }
+
+  hr {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+
+  .footer__div {
+    flex-direction: column;
+  }
+
+  .footer__div img {
+    position: static;
+  }
+
+  .footer p {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
