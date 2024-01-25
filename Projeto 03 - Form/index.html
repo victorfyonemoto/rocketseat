@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Victor Ferreira Yonemoto" />
+    <meta name="description" content="Projeto 03 sobre formulários da Rockeseat" />
+    <title>Projeto 03 - Form</title>
+    <link rel="icon" href="../img/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+  </head>   
+  <body>
+    <div class="container">
+      <header class="header">
+          <h1 class="header__h1">Crie e compartilhe seu evento.</h1>
+          <p class="header__p">
+              O primeiro passo, é preencher esse formulário de inscrição.
+          </p>
+      </header>
+      <main class="main">
+        <form action="" method="" class="form" id="main__form">
+          <fieldset class="form__fieldset">
+            <div class="fieldset__wrapper">
+              <legend class="form__legend">Informações do Evento</legend>
+              <div class="input__wrapper">
+                <label for="event-title">Título do Evento 
+                  <span>(mínimo 8 caracteres)</span>
+                </label>
+                <input required minlength="8" type="text" class="form__input" id="event-title">
+              </div>
+              <div class="input__wrapper">
+                <label for="event-link">Link do evento<span>(comece com https://)</span>
+                </label>
+                <input required type="url" class="form__input" id="event-link">
+              </div>
+              <div class="input__wrapper">
+                <label for="event-whatsapp">Whatsapp para contato<span>(somente números)</span>
+                </label>
+                <input required type="number" class="form__input" id="event-whatsapp">
+              </div>
+              <div class="input__wrapper">
+                <label for="event-info">Informações extras
+                </label>
+                <textarea id="event-info"></textarea>
+              </div>
+              <div class="input__wrapper">
+                <label for="event-category"><span></span>
+                </label>
+                <select name="" id="event-category">
+                  <option value="live">Ao vivo</option>
+                  <option value="podcast">Podcast</option>
+                  <option value="mentorship">Mentoria</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <div class="fieldset__wrapper">
+              <legend class="form__legend">Privacidade</legend>
+              <div class="input__wrapper">
+                <label for="event-email">E-mail do administrador 
+                  <span>(digite um email válido)</span>
+                </label>
+                <input required type="email" class="form__input" id="event-email">
+              </div>
+              <div class="input__wrapper">
+                <label for="event-password">Senha de acesso para os participantes 
+                  <span>(mínimo 8 caracteres)</span>
+                </label>
+                <input required minlength="8" type="password" class="form__input" id="event-password">
+              </div>
+              <div class="checkbox__wrapper">
+                <input type="checkbox" id="event-private">
+                <label for="event-private">Evento privado</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <div class="fieldset__wrapper">
+              <legend class="form__legend">Dia e Hora</legend>
+              <div class="event__date">
+                <div class="input__wrapper">
+                  <label for="event-date">Data</label>
+                  <input type="date" class="form__input" id="event-date">
+                </div>
+                <div class="input__wrapper">
+                  <label for="event-begin">Das</label>
+                  <input type="time" class="form__input" id="event-begin">
+                </div>
+                <div class="input__wrapper">
+                  <label for="event-end">Até</label>
+                  <input type="time" class="form__input" id="event-end">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+        <div class="submit">
+          <input form="main__form" type="submit" value="Salvar evento" class="submit__btn">
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+@media screen and (max-width: 720px){
+
+    /* ||GENERAL */
+
+    body {
+        text-align: center ;
+    }
+
+    /* ||CONTAINER */
+
+    .container {
+        width: 21.875rem;
+    }
+
+    /* || HEADER */
+
+    .header {
+        padding-top: 1.875rem;
+    }
+
+    /* || MAIN */
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* || FORM */
+
+    .input__wrapper label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input__wrapper span {
+        margin: 0;
+    }
+
+    .form__input {
+        width: 12.5rem;
+        padding: 0 24px;
+    }
+
+    .event__date {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+}
